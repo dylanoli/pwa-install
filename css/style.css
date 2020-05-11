@@ -1,0 +1,31 @@
+h1{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+p{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+body{
+    background-color: rgb(37, 44, 58);
+}
+input[type=button]
+{
+    background-color: rgb(255, 123, 0);
+    border: 0ch;
+    height: 40px;
+    border-radius:10px;
+    color: aliceblue;
+    padding: 10px;
+}
+input[type=button]:hover
+{
+    background-color: orange;
+}
+@media only screen and (max-width: 600px) {
+    p {
+      font-size:large
+    }
+}

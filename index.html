@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PWA Install</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel ="manifest" href="manisfest.json">
+    </head>
+    <body>
+        <h1>PWA Install</h1>
+        <div>
+            <p>This is a study to make notification when start the app, to install this site like a PWA in smartphones.</p>
+            <input id = "btnAdd" type="button" value="Make Notification">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <p>Study references: </p>
+            <p>https://www.youtube.com/watch?v=psB_Pjwhbxo&list=PLNYkxOF6rcIB2xHBZ7opgc2Mv009X87Hh&index=2&t=0s</p>
+        </div>
+    </body>
+    <script>
+        if('serviceWorker' in navigator)
+        {
+            window.addEventListener('load',()=>{
+                navigator.serviceWorker.register("/sw.js");
+            });
+        }
+    </script>
+    <script src="js/script.js"></script>
+</html>
