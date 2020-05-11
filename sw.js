@@ -29,8 +29,3 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
-
-// self.addEventListener('notificationclick', function(event) {
-//   console.log('On notification click: ', event);
-//   clients.openWindow('/');
-// });

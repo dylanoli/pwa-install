@@ -1,4 +1,4 @@
-let btnAdd = document.getElementById("btnAdd");
+let btnAdd = document.getElementsByClassName("btn-add-pwa");
 btnAdd.style.display = "none"
 let deferredPrompt;
 
@@ -6,7 +6,6 @@ window.addEventListener('beforeinstallprompt',(e)=>{
     e.preventDefault();
     deferredPrompt = e;
     btnAdd.style.display = "block"
-    console.log("aqui")
 });
 
 btnAdd.addEventListener("click",(e)=>{
